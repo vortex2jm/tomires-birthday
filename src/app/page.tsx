@@ -1,95 +1,47 @@
-import Image from 'next/image'
+"use client";
+import { ChangeEvent, useState } from 'react'
 import styles from './page.module.css'
+import Swal from 'sweetalert2';
+import { useRouter } from 'next/navigation';
 
 export default function Home() {
+  
+  const router = useRouter();
+  
+  const [age, setAge] = useState<string>("");
+
+  const handleAge = (event: ChangeEvent<HTMLInputElement>) => {
+    setAge(event.target.value);
+  }
+
+  const handleButtonClick = () => {
+    if(age == "26"){
+      Swal.fire({
+        title:"Uau!!!", 
+        text: "Você acertou sua idade", 
+        color: "#fff",
+        background: "#333",
+      });
+      router.push("/comments");
+    }
+    else{
+      Swal.fire({
+        title:"Meu pau na sua mão", 
+        text: "Ta mentindo a idade eim :P", 
+        color: "#fff",
+        background: "#333",
+      });
+      setAge("");
+    }
+  }
+
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
+    <div className={styles.mainContainer}>
+      <div className={styles.inputBox}>
+        <input className={styles.inputField} type="text" value={age} onChange={handleAge} placeholder={"Idade"}/>
+        <p>Valor do input: {age}</p>
+        <button className={styles.button} onClick={handleButtonClick}>Clique no botão</button>        
       </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    </div>
   )
 }
