@@ -11,15 +11,15 @@
 .inputBox{
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   width: 20%;
-  height: 20%;
+  height: 30%;
 }
 
 .inputField{
   width: 50%;
-  height: 50%;
+  height: 30%;
   border: 1px solid white;
   box-shadow: 0px 0px 10px white;
   font-size: large;
@@ -28,7 +28,14 @@
   background-color: black;
 }
 
-.button{
 
-  
+.button{
+  width: 80%;
+  height: 30%;
+  border: 1px white solid;
+}
+
+.button:hover{
+  transform: scale(1.05);
+  box-shadow: 0px 0px 10px white;
 }

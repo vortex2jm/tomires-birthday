@@ -17,8 +17,8 @@ export default function Home() {
   const handleButtonClick = () => {
     if(age == "26"){
       Swal.fire({
-        title:"Uau!!!", 
-        text: "Você acertou sua idade", 
+        title:"Meu pau na sua mão", 
+        text: "Brincadeirinha rsrs", 
         color: "#fff",
         background: "#333",
       });
@@ -26,8 +26,8 @@ export default function Home() {
     }
     else{
       Swal.fire({
-        title:"Meu pau na sua mão", 
-        text: "Ta mentindo a idade eim :P", 
+        title:"Errrrrooooooouuuuuu", 
+        text: "(Faustão falando...)", 
         color: "#fff",
         background: "#333",
       });
@@ -39,7 +39,7 @@ export default function Home() {
     <div className={styles.mainContainer}>
       <div className={styles.inputBox}>
         <input className={styles.inputField} type="text" value={age} onChange={handleAge} placeholder={"Idade"}/>
-        <p>Valor do input: {age}</p>
+        {/* <p>Valor do input: {age}</p> */}
         <button className={styles.button} onClick={handleButtonClick}>Clique no botão</button>        
       </div>
     </div>
