@@ -1,0 +1,13 @@
+.mainContainer{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.mainContainer h1{
+    color: greenyellow;
+    text-shadow: 0px 0px 10px greenyellow;
+}

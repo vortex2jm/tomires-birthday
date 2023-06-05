@@ -22,7 +22,7 @@ export default function Home() {
         color: "#fff",
         background: "#333",
       });
-      router.push("/comments");
+      router.push("/telemensagem");
     }
     else{
       Swal.fire({
@@ -37,6 +37,10 @@ export default function Home() {
 
   return (
     <div className={styles.mainContainer}>
+      <div>
+        <p className={styles.title}>Olá to.mires, se você chegou até aqui, quer dizer que é uma vencedora!</p>
+        <p className={styles.subtitle}>Já sabe digitar no computador</p>
+      </div>
       <div className={styles.inputBox}>
         <input className={styles.inputField} type="text" value={age} onChange={handleAge} placeholder={"Idade"}/>
         {/* <p>Valor do input: {age}</p> */}

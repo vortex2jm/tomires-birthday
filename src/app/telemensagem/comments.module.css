@@ -1,0 +1,62 @@
+.mainContainer{
+    background-image: url("/birthday2.jpg");
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    border-radius: 10px;
+    background-color: #000000cc;
+    padding: 1rem;
+    margin: 0.5rem;
+    color: greenyellow;
+    text-shadow: 0px 0px 10px greenyellow;
+}
+.telemensagem{
+    border-radius: 10px;
+    background-color: #000000cc;
+    margin: 0.5 rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.telemensagem h2{
+    text-shadow: 0px 0px 10px white;
+}
+
+.mentirinha{
+    width: 30%;
+    height: 40%;
+    border-radius: 10px;
+    background-color: #000000cc;
+    margin: 0.5rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.mentirinha button {
+    width: 80%;
+    height: 30%;
+    border: 1px white solid;
+}
+
+.mentirinha button:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px white;
+}
+
+.mentirinha h2{
+    margin-bottom: 10%;
+}
