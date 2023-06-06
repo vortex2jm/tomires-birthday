@@ -24,8 +24,8 @@ export default function Photos(){
         <div className={styles.mainContainer}>
             <iframe 
                 src={`https://drive.google.com/file/d/VIDEOID/preview`}
-                width={640}
-                height={360}
+                width={400}
+                height={200}
             ></iframe>
             {buttonState && <button onClick={handleButton}>Me tyra daqui</button>}
         </div>

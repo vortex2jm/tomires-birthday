@@ -63,7 +63,7 @@ export default function Ready(){
                     <h2>
                         Por isso não poderia deixar de passar por momentos emocionantes...
                     </h2>
-                    <img src="feeling.gif" alt="telemensagem" width={480} height={270}></img>
+                    <img src="feeling.gif" alt="telemensagem" width={400} height={200}></img>
                 </div>
             }
             {textBox.box2 && 

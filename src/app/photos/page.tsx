@@ -16,7 +16,7 @@ export default function Photos(){
     useEffect(() => {
         const timer = setTimeout(() => {
             setButtonState(true);
-        }, 2000);
+        }, 110000);
         return () => {clearTimeout(timer)};
     }, []);
 
@@ -24,8 +24,8 @@ export default function Photos(){
         <div className={styles.mainContainer}>
             <iframe 
                 src={`https://drive.google.com/file/d/VIDEOID/preview`}
-                width={640}
-                height={360}
+                width={400}
+                height={200}
             ></iframe>
             {buttonState && <button onClick={handleButton}>Tudo e mais um pouco</button>}
         </div>

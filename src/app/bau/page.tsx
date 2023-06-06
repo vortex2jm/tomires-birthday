@@ -63,7 +63,7 @@ export default function Bau(){
                     <h2>
                         Mas antes você terá que realizar uma missão!!!
                     </h2>
-                    <img src="comemoracao.gif" alt="telemensagem" width={480} height={270}></img>
+                    <img src="comemoracao.gif" alt="telemensagem" width={400} height={200}></img>
                 </div>
             }
             {textBox.box2 && 

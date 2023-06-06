@@ -65,7 +65,7 @@
     color: white;
 }
 
-@media (min-width: 300px) and (max-width: 1500px){
+@media (min-width: 300px) and (max-width: 1080px){
 
     .mainContainer{
         width: 100vw;

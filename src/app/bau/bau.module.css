@@ -66,3 +66,20 @@
     margin-bottom: 10%;
     color: white;
 }
+
+@media (min-width: 300px) and (max-width: 1080px) {
+    .mainContainer{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .end{
+        width: 80%;
+        height: 30%;
+    }
+
+    .end button{
+        width: 80%;
+        height: 60%;
+    }
+}
