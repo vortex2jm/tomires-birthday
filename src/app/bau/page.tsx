@@ -42,10 +42,10 @@ export default function Bau(){
     useEffect(() => {
         const timer = setTimeout(() => {
             handleBox(1, true);
-        }, 3000);        
+        }, 6000);        
         const timer2 = setTimeout(() => {
             handleBox(2,true);
-        },6000);
+        },11000);
 
         // Return
         return () => {
@@ -57,7 +57,7 @@ export default function Bau(){
 
     return (
         <div className={styles.mainContainer}>
-            {!textBox.box2 && <h1 className={styles.title}>Depois de fortes emoções, agora é hora da Tainha e vinho</h1>}
+            {!textBox.box2 && <h1 className={styles.title}>Depois de fortes emoções, agora é hora de Tainha e Vinho</h1>}
             {textBox.box1 && !textBox.box2 && 
                 <div className={styles.gif}>
                     <h2>

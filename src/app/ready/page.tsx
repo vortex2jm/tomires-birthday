@@ -42,10 +42,10 @@ export default function Ready(){
     useEffect(() => {
         const timer = setTimeout(() => {
             handleBox(1, true);
-        }, 3000);        
+        }, 5000);        
         const timer2 = setTimeout(() => {
             handleBox(2,true);
-        },6000);
+        },10000);
 
         // Return
         return () => {

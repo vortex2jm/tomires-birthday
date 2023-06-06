@@ -30,6 +30,7 @@
 
 .telemensagem h2{
     text-shadow: 0px 0px 10px white;
+    color: white;
 }
 
 .mentirinha{
@@ -59,4 +60,5 @@
 
 .mentirinha h2{
     margin-bottom: 10%;
+    color: white;
 }

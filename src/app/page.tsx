@@ -42,7 +42,7 @@ export default function Home() {
         <p className={styles.subtitle}>Já sabe digitar no computador</p>
       </div>
       <div className={styles.inputBox}>
-        <input className={styles.inputField} type="text" value={age} onChange={handleAge} placeholder={"Idade"}/>
+        <input className={styles.inputField} type="text" value={age} onChange={handleAge} placeholder={"Digite sua idade"}/>
         {/* <p>Valor do input: {age}</p> */}
         <button className={styles.button} onClick={handleButtonClick}>Clique no botão</button>        
       </div>

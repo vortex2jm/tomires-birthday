@@ -11,13 +11,15 @@
 
 .title{
   text-align: center;
-  font-size: large;
+  font-size: x-large;
   color: greenyellow;
   text-shadow: 0px 0px 10px greenyellow;
 }
 
 .subtitle{
   text-align: center;
+  color: white;
+  text-shadow: 0px 0px 10px white;
 }
 
 .inputBox{
@@ -30,24 +32,27 @@
 }
 
 .inputField{
+  color: white;
   width: 50%;
   height: 30%;
   border: 1px solid white;
   box-shadow: 0px 0px 10px white;
   font-size: large;
   text-align: center;
-  text-decoration: white;
   background-color: black;
 }
 
 
 .button{
+  background-color: rgb(0, 0, 0);
+  font-weight: bold;
+  color: white;
   width: 80%;
   height: 30%;
-  border: 1px white solid;
 }
 
 .button:hover{
   transform: scale(1.05);
   box-shadow: 0px 0px 10px white;
+  border: 1px white solid;
 }

@@ -1,6 +1,7 @@
 .mainContainer{
     /* background-image: url("/birthday2.jpg");
     background-size: cover; */
+    background-color: black;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -30,6 +31,7 @@
 
 .gif h2{
     text-shadow: 0px 0px 10px white;
+    color: white;
 }
 
 .end{
@@ -59,4 +61,5 @@
 
 .end h2{
     margin-bottom: 10%;
+    color: white;
 }

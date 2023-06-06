@@ -4,7 +4,7 @@ export default function End(){
 
     return(
         <div className={styles.mainContainer}>
-            <h1>Cheque seu email!!!</h1>
+            <h1>Abra o guarda roupas!!!</h1>
         </div>
     )
 }
