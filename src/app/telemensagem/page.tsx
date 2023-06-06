@@ -56,7 +56,7 @@ export default function (){
                     <h2>
                         E é por isso que tem um carro de telemensagem te esperando lá embaixo
                     </h2>
-                    <img src="telemensagem.jpg" alt="telemensagem" width={800} height={400}></img>
+                    <img src="telemensagem.jpg" alt="telemensagem" width={400} height={200}></img>
                 </div>
             }
             {textBox.box2 && 

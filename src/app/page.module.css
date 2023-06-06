@@ -56,3 +56,25 @@
   box-shadow: 0px 0px 10px white;
   border: 1px white solid;
 }
+
+@media (min-width: 300px) and (max-width: 1500px) {
+  .mainContainer{
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .inputBox{
+    width:80%;
+    height: 30%;
+  }
+
+  .inputField{
+    width: 80%;
+    height: 20%;
+  }
+
+  .button{
+    width: 80%;
+    height: 30%;
+  }
+}
