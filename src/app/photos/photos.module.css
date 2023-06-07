@@ -21,9 +21,13 @@
     box-shadow: 0px 0px 10px white;
 }
 
-@media (min-width: 300px) and (max-width: 1080px){
+.mainContainer iframe {
+    margin-bottom: 6.5rem;
+}
+
+/* @media (min-width: 300px) and (max-width: 1080px){
     .mainContainer button{
         width: 80%;
         height: 10%;
     }
-}
+} */

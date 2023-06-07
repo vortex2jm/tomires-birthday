@@ -38,7 +38,7 @@ export default function (){
         }, 5000);        
         const timer2 = setTimeout(() => {
             handleBox(2,true);
-        },10000);
+        },15000);
 
         // Return
         return () => {
@@ -56,7 +56,7 @@ export default function (){
                     <h2>
                         E é por isso que tem um carro de telemensagem te esperando lá embaixo
                     </h2>
-                    <img src="telemensagem.jpg" alt="telemensagem" width={400} height={200}></img>
+                    <img src="telemensagem.jpg" alt="telemensagem" width={800} height={400}></img>
                 </div>
             }
             {textBox.box2 && 

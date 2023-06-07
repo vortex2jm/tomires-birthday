@@ -42,7 +42,7 @@ export default function Bau(){
     useEffect(() => {
         const timer = setTimeout(() => {
             handleBox(1, true);
-        }, 6000);        
+        }, 5000);        
         const timer2 = setTimeout(() => {
             handleBox(2,true);
         },11000);
